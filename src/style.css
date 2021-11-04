@@ -1,8 +1,32 @@
+body
+{
+    background-image: url("Background new.jpg") ;
+    background-position: top, center;
+}
 .container {
+    margin-top: 10%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+}
+input{
+    outline:none;
+    margin-bottom: 5%;
+    height: 25px;
+    width: 200px;
+    border-width: 0px;
+    border-radius: 1px;
+    color: aqua;
+    background: 0;
+    box-shadow: inset 0  0 0 3px #21b4da;
+}
+
+input:focus{
+    transition: all 500ms ease;
+    box-shadow:5px 0px 30px #ffffff;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.51);
 }
 
 .imputs {
@@ -14,6 +38,48 @@
 }
 
 .try {
-    margin-bottom: 30px;
-    margin-top: 10px;
+    height: 25px;
+    width: 200px;
+    border-width: 0px;
+    border-radius: 20px;
+    color: aqua;
+    background: 0;
+    box-shadow: inset 0  0 0 3px #21b4da;
+}
+button.try:hover{
+    transition: all 1s ease;
+    background: #21b4da;
+    color: #ffffff;
+    box-shadow: 0 0 20px #ffffff;
+}
+
+button.try:active{
+    transition: all 70ms ease;
+    box-shadow:0 0 30px #21b4da;
+    background: rgb(255, 255, 255);
+}
+
+
+
+.res{
+    margin-top: 10%;
+    height: 25px;
+    width: 200px;
+    border-width: 0px;
+    border-radius: 20px;
+    color: aqua;
+    background: 0;
+    box-shadow: inset 0  0 0 3px #21b4da;
+}
+button.res:hover{
+    transition: all 1s ease;
+
+    background: #21b4da;
+    color: #ffffff;
+    box-shadow:0 0 20px #ffffff;
+}
+button.res:active{
+    transition: all 70ms ease;
+    box-shadow:0 0 30px #e10f0f;
+    background: rgba(255, 255, 255, 0.62);
 }
