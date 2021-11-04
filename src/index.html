@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
     <div class = "container">
@@ -14,12 +14,13 @@
     <form action="#" class="imputs">
         <input type="number"class ="min" placeholder="Выбери минимальное число">
         <input type="number" class ="max" placeholder="Выбери максимальное число">
-        <input type="number"class ="min" placeholder="Выбери число попыток">
-        <input type="number" class = "countTry" placeholder="Попробуй !">
+        <input type="number"class ="countTry" placeholder="Выбери число попыток">
+        <input type="number" class = "numToTry" placeholder="Попробуй !">
         <!-- В спан передаем результат с информацией о том как близко к рандомному числу и количество оставшихся попыток. -->
         <span class="result" id ="result"></span>
-        <button class="try" onclick="">Попробовать</button>
-        <button class="res">Сброс</button>
+        <button class="try" onclick="culcNum()">Попробовать</button>
+        <button class="res" onclick="resetNum()">Сброс</button>
+    <p class="test"></p>
     </form>
     <script src="./app.js"></script>
     </div>
