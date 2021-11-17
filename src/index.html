@@ -11,15 +11,31 @@
     <div class = "container">
     <h1 class="title">Привет! Давай сыграем в одну игру!</h1>
     <h2 class="subtitle">Я загадал чистло, попробуй его отгадать. У тебя 3 попытки.</h2>
-    <form action="#" class="imputs">
-        <input type="number"class ="min" placeholder="Выбери минимальное число">
-        <input type="number" class ="max" placeholder="Выбери максимальное число">
-        <input type="number"class ="min" placeholder="Выбери число попыток">
-        <input type="number" class = "countTry" placeholder="Попробуй !">
+    <form action="#" class="inputs">
+        <div class="inpWrrapper">
+            <input type="text"class ="min i"  id="min" placeholder=" ">
+            <label for="min" class="lb">Выбери минимальное число</label>
+        </div>
+        <div class="inpWrrapper">
+            <input type="text" class ="max i" id = "max" placeholder=" ">
+            <label for="max" class="lb">Выбери максимальное число</label>
+        </div>
+        <div class="inpWrrapper">
+            <input type="text"class ="min i"  id="try"placeholder=" ">
+            <label for="try" class="lb">Выбери число попыток</label>
+        </div>
+        <div class="inpWrrapper">
+        <input type="text" class = "countTry i" id ="22" placeholder=" ">
+        <label for="22" class="lb"> Попробуй !</label>
+        </div>
         <!-- В спан передаем результат с информацией о том как близко к рандомному числу и количество оставшихся попыток. -->
         <span class="result" id ="result"></span>
-        <button class="try" onclick="">Попробовать</button>
-        <button class="res">Сброс</button>
+        <div class="btns">
+            <button class="res btn">Сброс</button>
+            <button class="try btn" onclick="">Попробовать</button>
+        </div>
+        
+        
     </form>
     <script src="./app.js"></script>
     </div>
