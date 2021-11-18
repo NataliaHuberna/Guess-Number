@@ -23,17 +23,17 @@
             <label for="max" class="lb">Choose max number in the range</label>
         </div>
         <div class="inpWrrapper">
-            <input type="text"class ="min i"  id="try"placeholder=" ">
-            <label for="try" class="lb">Choose the number of tries</label>
+            <input type="text"class ="min i"  id="countTry"placeholder=" ">
+            <label for="countTry" class="lb">Choose the number of tries</label>
         </div>
         <div class="inpWrrapper">
-        <input type="text" class = "countTry i" id ="22" placeholder=" ">
-        <label for="22" class="lb"> Guess number</label>
+        <input type="text" class = "countTry i" id ="numTry" placeholder=" ">
+        <label for="numTry" class="lb"> Guess number</label>
         </div>
         <span class="result" id ="result"></span>
         <div class="btns">
-            <button class="res btn">Reset</button>
-            <button class="try btn" onclick="">Play</button>
+            <button class="resBtn" id="res">Reset</button>
+            <button class="tryBtn" id="try" onclick="">Play</button>
         </div>
     </form>
     <div class="swap-themes">
@@ -41,6 +41,8 @@
         <label for="swap" class="label-swap">Swap theme</label>
     </div>
     </div>
+    <script src="./params.js"></script>
+    <script src="./func.js"></script>
     <script src="./app.js"></script>
 </body>
 </html>
