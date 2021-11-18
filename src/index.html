@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css"  class="style"/>
+</head>
+<body>
+    <div class = "container">
+    <h1 class="title">Hey! Let's play one game!</h1>
+    <h2 class="subtitle">Just choose range! After that will be generated number and all you need it's try to guess it!</h2>
+    <form action="#" class="inputs">
+        <div class="inpWrrapper">
+            <input type="text"class ="min i"  id="min" placeholder=" ">
+            <label for="min" class="lb">Choose min number in the range</label>
+        </div>
+        <div class="inpWrrapper">
+            <input type="text" class ="max i" id = "max" placeholder=" ">
+            <label for="max" class="lb">Choose max number in the range</label>
+        </div>
+        <div class="inpWrrapper">
+            <input type="text"class ="min i"  id="countTry"placeholder=" ">
+            <label for="countTry" class="lb">Choose the number of tries</label>
+        </div>
+        <div class="inpWrrapper">
+        <input type="text" class = "countTry i" id ="numTry" placeholder=" ">
+        <label for="numTry" class="lb"> Guess number</label>
+        </div>
+        <span class="result" id ="result"></span>
+        <div class="btns">
+            <button class="resBtn" id="res">Reset</button>
+            <button class="tryBtn" id="try" onclick="">Play</button>
+        </div>
+    </form>
+    <div class="swap-themes">
+        <button type="button" class="swap">Swap theme</button>
+    </div>
+    </div>
+    <script src="./params.js"></script>
+    <script src="./func.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
