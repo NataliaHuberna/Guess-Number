@@ -4,42 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Number guesser</title>
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css"  class="style"/>
     
 </head>
 <body>
-    <div class = "container">
-    <h1 class="title">Hey! Let's play one game!</h1>
-    <h2 class="subtitle">Just choose range! After that will be generated number and all you need it's try to guess it!</h2>
-    <form action="#" class="inputs">
-        <div class="inpWrrapper">
-            <input type="text"class ="min i"  id="min" placeholder=" ">
-            <label for="min" class="lb">Choose min number in the range</label>
-        </div>
-        <div class="inpWrrapper">
-            <input type="text" class ="max i" id = "max" placeholder=" ">
-            <label for="max" class="lb">Choose max number in the range</label>
-        </div>
-        <div class="inpWrrapper">
-            <input type="text"class ="min i"  id="countTry"placeholder=" ">
-            <label for="countTry" class="lb">Choose the number of tries</label>
-        </div>
-        <div class="inpWrrapper">
-        <input type="text" class = "countTry i" id ="numTry" placeholder=" ">
-        <label for="numTry" class="lb"> Guess number</label>
-        </div>
-        <span class="result" id ="result"></span>
-        <div class="btns">
-            <button class="resBtn btn" id="res">Reset</button>
-            <button class="tryBtn btn" id="try" onclick="">Play</button>
-        </div>
-    </form>
-    <div class="swap-themes">
-        <input type="checkbox" class="swap" id= "swap"></input>
-        <label for="swap" class="label-swap">Swap theme</label>
-    </div>
+    <div class="wrapper">
+        <header class="header">
+            <div class="text-wrapper">
+                <h1 class="header__title">Number guesser</h1>
+            </div>
+            <div class="swap-themes">
+                <input type="checkbox" class="swap" id= "swap"></input>
+                <label for="swap" class="label-swap">Swap theme</label>
+            </div>
+        </header>
+        <main class = "container">
+            <h2 class="title">Hey! Let's play one game!</h2>
+            <p class="subtitle">Just choose range! After that will be generated number and all you need it's try to guess it!</p>
+            <form action="#" class="inputs">
+                <div class="inpWrrapper">
+                    <input type="text"class ="min i"  id="min" placeholder=" ">
+                    <label for="min" class="lb">Choose min number in the range</label>
+                </div>
+                <div class="inpWrrapper">
+                    <input type="text" class ="max i" id = "max" placeholder=" ">
+                    <label for="max" class="lb">Choose max number in the range</label>
+                </div>
+                <div class="inpWrrapper">
+                    <input type="text"class ="min i"  id="countTry"placeholder=" ">
+                    <label for="countTry" class="lb">Choose the number of tries</label>
+                </div>
+                <div class="inpWrrapper">
+                    <input type="text" class = "countTry i" id ="numTry" placeholder=" ">
+                    <label for="numTry" class="lb"> Guess number</label>
+                </div>
+                <span class="result" id ="result"></span>
+                <div class="btns">
+                    <button class="resBtn btn" id="res">Reset</button>
+                    <button class="tryBtn btn" id="try" onclick="">Play</button>
+                </div>
+            </form>
+        </main>
+        <footer class="footer">
+            <p class="footer-text">link to developers github :</p>
+            <ul>
+                <li>
+                    <a href="https://github.com/Vitalii-sh" class="git-link">
+                        <img src="../img/Octocat.png" alt="github" class="github-icon"> 
+                        <span>Vitalii Shevchenko</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/NataliaHuberna" class="git-link">
+                        <img src="../img/Octocat.png" alt="github" class="github-icon">
+                        <span>Natalia Huberna</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/VitVin" class="git-link">
+                        <img src="../img/Octocat.png" alt="github" class="github-icon">
+                        <span>Vitalii</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/Sluip430" class="git-link">
+                        <img src="../img/Octocat.png" alt="github" class="github-icon">
+                        <span>Vyacheslav</span>
+                    </a>
+                </li>
+            </ul>
+        </footer>
     </div>
     <script src="./params.js"></script>
     <script src="./func.js"></script>

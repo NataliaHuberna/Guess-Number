@@ -1,28 +1,51 @@
 
-body {
+html,body {
     background: url(../img/bg2.png);
     background-size: cover;
+    height: 100%;
 }
 
-h1
+.title
 {
+    font-size: 26px;
     cursor: default;
     color: #cfbeaa;
     text-shadow:0px 0px 3px #cfbeaa;
-    margin-bottom: 4%;
+    margin-bottom: 2%;
 }
-
-h2
-{
+.subtitle {
+    font-size: 26px;
     cursor: default;
     color: #cfbeaa;
     text-shadow:0px 0px 3px #cfbeaa;
     margin-bottom: 3%;
 }
+.header {
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4%;
+    padding: 0 30px;
+    background-color: #cfbeaa29;
+    box-shadow: 0px 0px 5px #cfbeaa;
+}
 
+.header__title {
+    cursor: default;
+    font-size: 50px;
+    color: #cfbeaa;
+    text-shadow:0px 0px 3px #cfbeaa;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
 
 .container {
-    margin-top: 7%;
+    flex: 1 1 auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -68,7 +91,7 @@ input:focus{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
     box-shadow:0px 0px 10px #cfbeaa;
 }
 
@@ -150,10 +173,8 @@ input:focus{
 }
 
 .swap-themes {
-    width: 100%;
     display: flex;
     justify-content: flex-end;
-    padding: 0 30px;
 }
 
 .swap {
@@ -183,7 +204,7 @@ input[type="checkbox"]:checked + label{
     cursor: pointer;
     font-family: 'Averia Serif Libre';
     height: 36px;
-    width: 200px;
+    width: 120px;
     border-width: 0px;
     border-radius: 20px;
     color: #cfbeaa;
@@ -195,4 +216,39 @@ input[type="checkbox"]:checked + label{
     background: #cfbeaa29;
     color: #cfbeaa;
     box-shadow: 0 0 20px #cfbeaa;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    background-color: #cfbeaa29;
+    box-shadow: 0px 0px 5px #cfbeaa;
+}
+.footer-text {
+font-size: 24px;
+color: #ecf3f9;
+cursor: default;
+}
+li {
+list-style: none;
+margin-right: 15px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.github-icon {
+    max-width: 50px;
+}
+
+.git-link{
+    text-shadow: 0 0 10px #ebf2f9;
+    text-decoration: none;
+    font-size: 24px;
+    color: #ecf3f9;
+    display: flex;
+    align-items: center;
 }

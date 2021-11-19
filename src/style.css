@@ -1,45 +1,52 @@
-* averia-serif-libre-regular - latin */
-@font-face {
-    font-family: 'Averia Serif Libre';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/averia-serif-libre-v10-latin-regular.eot'); /* IE9 Compat Modes */
-    src: local(''),
-         url('../fonts/averia-serif-libre-v10-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/averia-serif-libre-v10-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/averia-serif-libre-v10-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/averia-serif-libre-v10-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/averia-serif-libre-v10-latin-regular.svg#AveriaSerifLibre') format('svg'); /* Legacy iOS */
-  }
 
-body
-{
+html,body {
+    height: 100%;
     font-family: 'Averia Serif Libre';
-    background-image: url("../img/Background\ new.jpg") ;
+    background: url(../img/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top, center;
 }
-
-h1
-{
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.title {
+    font-size: 26px;
     cursor: default;
     color: #ffffff;
     text-shadow:0px 0px 10px #0ebadc;
-    margin-bottom: 4%;
+    margin-bottom: 2%;
 }
 
-h2
-{
+.subtitle {
+    font-size: 26px;
     cursor: default;
     color: #ffffff;
     text-shadow:0px 0px 10px #0ebadc;
     margin-bottom: 3%;
 }
 
+.header {
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4%;
+    background-color: #0000004d;
+    padding: 0 30px;
+    box-shadow: 0px 0px 5px #0ebadc;
+}
 
+.header__title {
+    cursor: default;
+    font-size: 50px;
+    color: #ffffff;
+    text-shadow:0px 0px 10px #0ebadc;
+}
 .container {
-    margin-top: 7%;
+    flex: 1 1 auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -85,8 +92,8 @@ input:focus{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 5%;
     box-shadow:0px 0px 10px #0ebadc;
+    margin-bottom: 3%;
 }
 
 .inpWrrapper {
@@ -168,10 +175,8 @@ input:focus{
 }
 
 .swap-themes {
-    width: 100%;
     display: flex;
     justify-content: flex-end;
-    padding: 0 30px;
 }
 
 input[type="checkbox"] {
@@ -189,7 +194,7 @@ input[type="checkbox"]:checked + label{
     cursor: pointer;
     font-family: 'Averia Serif Libre';
     height: 36px;
-    width: 200px;
+    width: 120px;
     border-width: 0px;
     border-radius: 20px;
     color: aqua;
@@ -201,4 +206,39 @@ input[type="checkbox"]:checked + label{
     background: #21b4da;
     color: #ffffff;
     box-shadow: 0 0 20px #ffffff;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    background-color: #0000004d;
+    box-shadow: 0px 0px 5px #0ebadc;
+}
+.footer-text {
+font-size: 24px;
+color: #ecf3f9;
+cursor: default;
+}
+li {
+margin-right: 15px;
+list-style: none;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.github-icon {
+    max-width: 50px;
+}
+
+.git-link{
+    text-shadow: 0 0 10px #ebf2f9;
+    text-decoration: none;
+    font-size: 24px;
+    color: #ecf3f9;
+    display: flex;
+    align-items: center;
 }
