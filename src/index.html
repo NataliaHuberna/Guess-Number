@@ -7,9 +7,20 @@
     <title>Number guesser</title>
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css"  class="style"/>
-    
+    <script type="text/javascript">
+
+        function stopRKey(evt) {
+            var evt = (evt) ? evt : ((event) ? event : null);
+            var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null);
+            if ((evt.keyCode == 13) && (node.type == "text")) { return false; }
+        }
+
+        document.onkeypress = stopRKey;
+
+    </script>
 </head>
 <body>
+    <body onkeydown="TriggeredKey(this)"></body>
     <div class="wrapper">
         <header class="header">
             <div class="text-wrapper">
@@ -25,20 +36,20 @@
             <p class="subtitle">Just choose range! After that will be generated number and all you need it's try to guess it!</p>
             <form action="#" class="inputs">
                 <div class="inpWrrapper">
-                    <input type="text"class ="min i"  id="min" placeholder=" ">
-                    <label for="min" class="lb">Choose min number in the range</label>
+                    <input type="text"class ="min i"  id="min" placeholder=" " title="Only numbers">
+                    <label for="min" class="lb" title="Only numbers" >Choose min number in the range</label>
                 </div>
                 <div class="inpWrrapper">
-                    <input type="text" class ="max i" id = "max" placeholder=" ">
-                    <label for="max" class="lb">Choose max number in the range</label>
+                    <input type="text" class ="max i" id = "max" placeholder=" " title="Only numbers">
+                    <label for="max" class="lb" title="Only numbers" >Choose max number in the range</label>
                 </div>
                 <div class="inpWrrapper">
-                    <input type="text"class ="min i"  id="countTry"placeholder=" ">
-                    <label for="countTry" class="lb">Choose the number of tries</label>
+                    <input type="text"class ="min i"  id="countTry"placeholder=" " title="Only numbers">
+                    <label for="countTry" class="lb" title="Only numbers">Choose the number of tries</label>
                 </div>
                 <div class="inpWrrapper">
-                    <input type="text" class = "countTry i" id ="numTry" placeholder=" ">
-                    <label for="numTry" class="lb"> Guess number</label>
+                    <input type="text" class = "countTry i" id ="numTry" placeholder=" " title="Only numbers">
+                    <label for="numTry" class="lb" title="Only numbers" > Guess number</label>
                 </div>
                 <span class="result" id ="result"></span>
                 <div class="btns">
@@ -53,7 +64,7 @@
                 <li>
                     <a href="https://github.com/Vitalii-sh" class="git-link">
                         <img src="../img/Octocat.png" alt="github" class="github-icon"> 
-                        <span>Vitalii Shevchenko</span>
+                        <span class="">Vitalii Shevchenko</span>
                     </a>
                 </li>
                 <li>

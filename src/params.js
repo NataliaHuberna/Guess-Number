@@ -1,7 +1,6 @@
 let swich = document.querySelector(".swap");
 let playButton = document.querySelector(".tryBtn");
 let reSetButton = document.querySelector(".resBtn");
-
 let randNum = 0;
 let isRandomNum = false;
 let min = 0;
