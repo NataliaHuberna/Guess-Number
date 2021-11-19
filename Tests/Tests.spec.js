@@ -1,7 +1,7 @@
 describe("Test HTML", () => {
     it("h1 element should say 'Hey! Lets play one game!'", () => {
         let element = document.querySelector(".title").innerText;
-        expect(element).to.equal("Hey! Lets play one game!");
+        expect(element).to.equal("Hey! Let's play one game!");
     })
 
     it("should input be empty", () => {
