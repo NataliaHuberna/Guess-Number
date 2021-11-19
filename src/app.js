@@ -1,4 +1,3 @@
-
 swich.addEventListener("click", () => {
   let theme = document.querySelector(".style");
   if (theme.getAttribute("href") == "style.css") {
@@ -10,9 +9,12 @@ swich.addEventListener("click", () => {
 
 playButton.addEventListener("click", () => {
   playGame()
+  numTryFocus = document.querySelector('#numTry')
+  numTryFocus.focus()
 });
 
 reSetButton.addEventListener("click", () => {
   reSet()
+  minFocus = document.querySelector('#min')
+  minFocus.focus()
 });
-
