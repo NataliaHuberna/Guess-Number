@@ -1,3 +1,4 @@
+let swich = document.querySelector(".swap");
 
 swich.addEventListener("click", () => {
   let theme = document.querySelector(".style");
@@ -7,12 +8,3 @@ swich.addEventListener("click", () => {
     theme.href = "style.css";
   }
 });
-
-playButton.addEventListener("click", () => {
-  playGame()
-});
-
-reSetButton.addEventListener("click", () => {
-  reSet()
-});
-
