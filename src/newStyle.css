@@ -45,6 +45,7 @@ html,body {
 }
 
 .container {
+    padding: 0 30px;
     flex: 1 1 auto;
     display: flex;
     justify-content: center;
@@ -194,7 +195,7 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked + label{
-    background-color: #0096882b;
+    background-color: #cfbeaa36;
 }
 .label-swap {
     display: flex;
@@ -251,4 +252,194 @@ ul {
     color: #ecf3f9;
     display: flex;
     align-items: center;
+}
+
+@media (max-width:992px) {
+    h1{
+        margin-bottom: 0;
+        font-size: 25px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    .inputs{
+        min-height: 360px;
+        min-width: 490px;
+    }
+
+    .lb {
+    font-size: 18px;
+    }
+
+    li {
+        margin: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1{
+        margin-bottom: 0;
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 17px;
+        margin-bottom: 25px;
+    }
+
+    .inputs{
+        min-height: 300px;
+        min-width: 420px;
+    }
+
+    input{
+        width: 280px;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    .i:focus ~ .lb, .i:not(:placeholder-shown) ~ .lb {
+    font-size: 16px;
+    top: -16px;
+    }
+
+    .lb {
+        font-size: 15px;
+    }
+
+    .btns {
+        min-width: 410px;
+        justify-content: space-evenly;
+    }
+
+    .btn {
+        font-size: 16px;
+        height: 34px;
+        width: 150px;
+        border-radius: 7px;
+    }
+
+    .label-swap{
+        font-size: 16px;
+        height: 34px;
+        width: 160px;
+        border-radius: 8px;
+    }
+
+    .github-icon {
+        max-width: 30px;
+    }
+    
+    .git-link{
+        font-size: 18px;
+    }
+
+    .header__title {
+        font-size: 40px;
+    }
+    li:last-child {
+        margin: 0px;
+    }
+    }
+
+@media (max-width: 672px) {
+    .footer {
+        display: none;
+    }
+
+    .subtitle {
+        text-align: center;
+    }
+}
+
+ @media (max-width: 425px) {
+    .footer {
+        display: none;
+    }
+    h1 {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 11px;
+        margin-bottom: 17px;
+    }
+
+    .inputs {
+        min-height: 220px;
+        min-width: 260px;
+        border-radius: 10px;
+    }   
+
+    input {
+        width: 180px;
+        margin-bottom: 0px;
+        font-size: 12px;
+        height: 13px;
+    }
+
+    .lb {
+        font-size: 12px;
+        top: -3px;
+    }
+
+    .btns {
+       min-width: 220px;
+        justify-content: space-between;
+    }
+
+   
+    .btn {
+        font-size: 13px;
+        height: 25px;
+        width: 83px;
+        border-radius: 3px;
+    }
+
+    .label-swap {
+        font-size: 14px;
+        height: 28px;
+        width: 110px;
+        border-radius: 4px;
+    }
+
+    .result {
+        height: 25px;
+        font-size: 10px;
+     }
+
+     .i:focus ~ .lb, .i:not(:placeholder-shown) ~ .lb {
+        font-size: 11px;
+        top: -7px;
+     
+        
+    }
+    .title {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .subtitle {
+        text-align: center;
+        font-size:16px;
+    }
+
+    .github-icon {
+        max-width: 20px;
+    }
+    
+    .git-link{
+        font-size: 14px;
+
+    }
+
+    .header__title {
+        font-size: 20px;
+    }
+    .footer-text {
+        font-size: 16px;
+    }
 }
